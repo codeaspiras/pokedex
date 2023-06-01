@@ -1,0 +1,8 @@
+<input
+    #inputText
+    type="text"
+    [value]="internalValue"
+    (input)="setValue(inputText.value)"
+    placeholder=""
+    />
+<label (click)="inputText.focus()">{{label}}</label>

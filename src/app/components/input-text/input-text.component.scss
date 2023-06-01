@@ -1,0 +1,71 @@
+:host {
+    display: block;
+    position: relative;
+    width: 269px;
+    max-width: 100%;
+
+    margin-top: 24px;
+}
+
+label {
+    width: auto;
+    max-width: 100%;
+    height: 33px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+
+    color: #A7A7A7;
+    background: #232323;
+    border-radius: 1px;
+
+    position: absolute;
+    top: 24px;
+    left: 10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+    cursor: text;
+
+    transition: all 250ms;
+}
+
+input {
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    background: #232323;
+    border: 1px solid #1C0A09;
+    border-radius: 6px;
+
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+
+    color: #FFFFFF;
+
+    outline: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 4px;
+    padding: 5px;
+    width: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+
+    color: #A7A7A7;
+}
