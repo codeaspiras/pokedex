@@ -1,0 +1,33 @@
+:host {
+    display: inline-block;
+}
+
+button {
+    display: block;
+    background-color: #27AAFE;
+    outline: 1px solid transparent;
+    border: 1px solid #000000;
+    color: #fff;
+    box-sizing: border-box;
+    width: 53px;
+    height: 53px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #50a7de;
+    }
+
+    &:focus {
+        outline-color: #fff;
+    }
+
+    &:disabled {
+        background-color: #8b8b8b;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: #a9a9a9;
+        }
+    }
+}

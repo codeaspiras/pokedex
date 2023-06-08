@@ -1,11 +1,20 @@
 <div>
-    Blablabla<br/>
     <app-input-text
         label="Pokemon ID or name"
         [value]="searchValue"
         (onChange)="setSearchValue($event)"
         >
     </app-input-text><br/>
-    {{searchValue}}<br/>
-    Blebleble
+    <br/>
+    <app-numeric-button>0</app-numeric-button>
+    <app-numeric-button>1</app-numeric-button>
+    <app-numeric-button>2</app-numeric-button>
+    <app-numeric-button>3</app-numeric-button>
+    <app-numeric-button>4</app-numeric-button>
+    <br/>
+    <app-numeric-button [disabled]="true">5</app-numeric-button>
+    <app-numeric-button>6</app-numeric-button>
+    <app-numeric-button>7</app-numeric-button>
+    <app-numeric-button>8</app-numeric-button>
+    <app-numeric-button>9</app-numeric-button>
 </div>

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InputTextComponent } from './components/input-text/input-text.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NumericButtonComponent } from './components/numeric-button/numeric-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputTextComponent,
-    HomeComponent
+    HomeComponent,
+    NumericButtonComponent
   ],
   imports: [
     BrowserModule,
