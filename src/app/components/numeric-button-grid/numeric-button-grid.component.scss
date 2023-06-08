@@ -1,0 +1,31 @@
+$buttonRadius: 8px;
+
+:host {
+    display: block;
+
+    .row {
+        display: flex;
+
+        app-numeric-button ::ng-deep button {
+            border-radius: 0 !important;
+        }
+
+        &:first-child {
+            app-numeric-button:first-child ::ng-deep button {
+                border-top-left-radius: $buttonRadius !important;
+            }
+            app-numeric-button:last-child ::ng-deep button {
+                border-top-right-radius: $buttonRadius !important;
+            }
+        }
+
+        &:last-child {
+            app-numeric-button:first-child ::ng-deep button {
+                border-bottom-left-radius: $buttonRadius !important;
+            }
+            app-numeric-button:last-child ::ng-deep button {
+                border-bottom-right-radius: $buttonRadius !important;
+            }
+        }
+    }
+}

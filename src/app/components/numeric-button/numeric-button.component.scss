@@ -5,7 +5,7 @@
 button {
     display: block;
     background-color: #27AAFE;
-    outline: 1px solid transparent;
+    outline: none;
     border: 1px solid #000000;
     color: #fff;
     box-sizing: border-box;
@@ -19,7 +19,9 @@ button {
     }
 
     &:focus {
-        outline-color: #fff;
+        color: #27AAFE;
+        border-color: #27AAFE;
+        background-color: #fff;
     }
 
     &:disabled {

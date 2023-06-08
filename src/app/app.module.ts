@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { InputTextComponent } from './components/input-text/input-text.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NumericButtonComponent } from './components/numeric-button/numeric-button.component';
+import { NumericButtonGridComponent } from './components/numeric-button-grid/numeric-button-grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputTextComponent,
     HomeComponent,
-    NumericButtonComponent
+    NumericButtonComponent,
+    NumericButtonGridComponent
   ],
   imports: [
     BrowserModule,

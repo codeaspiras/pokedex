@@ -1,0 +1,7 @@
+<div class="row" *ngFor="let row of rows">
+    <app-numeric-button
+        *ngFor="let number of row"
+        (onClick)="click(number)">
+        {{ number }}
+    </app-numeric-button>
+</div>

@@ -6,15 +6,5 @@
         >
     </app-input-text><br/>
     <br/>
-    <app-numeric-button>0</app-numeric-button>
-    <app-numeric-button>1</app-numeric-button>
-    <app-numeric-button>2</app-numeric-button>
-    <app-numeric-button>3</app-numeric-button>
-    <app-numeric-button>4</app-numeric-button>
-    <br/>
-    <app-numeric-button [disabled]="true">5</app-numeric-button>
-    <app-numeric-button>6</app-numeric-button>
-    <app-numeric-button>7</app-numeric-button>
-    <app-numeric-button>8</app-numeric-button>
-    <app-numeric-button>9</app-numeric-button>
+    <app-numeric-button-grid (onClick)="onNumericButtonClick($event)"></app-numeric-button-grid>
 </div>

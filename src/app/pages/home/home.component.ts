@@ -11,4 +11,8 @@ export class HomeComponent {
   setSearchValue(value: string): void {
     this.searchValue = value;
   }
+
+  onNumericButtonClick(value: number): void {
+    this.searchValue += value.toString();
+  }
 }
